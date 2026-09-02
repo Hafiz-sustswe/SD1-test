@@ -1,0 +1,35 @@
+# ---------------------------------------------------------
+# CSE-2340 | Example .gitignore for a web project
+# Save this file in your project root with the exact name:
+#     .gitignore
+# (the dot at the start is required, and there is no .txt)
+# ---------------------------------------------------------
+
+# Dependencies - thousands of files, never push these
+node_modules/
+
+# Secret keys, passwords and API keys
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Log files
+*.log
+npm-debug.log*
+
+# Personal notes you do not want to publish
+notes.txt

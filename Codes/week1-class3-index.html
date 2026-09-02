@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <!-- charset lets the browser show all characters correctly -->
+  <meta charset="UTF-8">
+  <!-- viewport makes the page behave correctly on a mobile screen -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- description is read by search engines -->
+  <meta name="description" content="Personal profile page of a CSE student at IIUC.">
+  <!-- title is the text shown on the browser tab -->
+  <title>Md Sadman | Profile</title>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER: the identity of the page + the navigation menu
+       ============================================================ -->
+  <header>
+    <h1>Md Sadman Hafiz</h1>
+    <p>Third semester CSE student at International Islamic University Chittagong</p>
+
+    <!-- nav marks a group of navigation links -->
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- external link: opens another website -->
+        <li><a href="https://www.iiuc.ac.bd">IIUC Website</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- ============================================================
+       MAIN: the main content of the page. Only ONE main per page.
+       ============================================================ -->
+  <main>
+
+    <!-- ------------------------------------------------------
+         SECTION 1: About me
+         The id="about" is the target of the nav link href="#about"
+         ------------------------------------------------------ -->
+    <section id="about">
+      <h2>About Me</h2>
+
+      <!-- alt describes the picture for a screen reader user
+           and is shown if the image file cannot be loaded -->
+      <img src="images/profile.jpg"
+           alt="Portrait photo of Md Sadman at the IIUC campus"
+           width="180">
+
+      <p>
+        Hello! I am a <strong>third semester</strong> student in the Department of
+        Computer Science and Engineering at IIUC. I have finished Computer
+        Programming 2 with Java and I am now learning front-end web development.
+        I <em>enjoy</em> building things that other people can actually open and use.
+      </p>
+
+      <p>
+        My goal this semester is to build and deploy my own responsive website.
+      </p>
+    </section>
+
+    <!-- ------------------------------------------------------
+         SECTION 2: Skills - an unordered list, order does not matter
+         ------------------------------------------------------ -->
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <h3>Programming</h3>
+      <ul>
+        <li>Java</li>
+        <li>C</li>
+        <li>HTML (learning now)</li>
+      </ul>
+
+      <h3>Other</h3>
+      <ul>
+        <li>Problem solving</li>
+        <li>Team work</li>
+        <li>Bangla and English communication</li>
+      </ul>
+    </section>
+
+    <!-- ------------------------------------------------------
+         SECTION 3: Education - an ordered list, order matters
+         ------------------------------------------------------ -->
+    <section id="education">
+      <h2>Education</h2>
+      <ol>
+        <li>BSc in Computer Science and Engineering, IIUC &mdash; running</li>
+        <li>Higher Secondary Certificate, Chattogram College &mdash; 2024</li>
+        <li>Secondary School Certificate, Chattogram &mdash; 2022</li>
+      </ol>
+    </section>
+
+    <!-- ------------------------------------------------------
+         SECTION 4: Contact form
+         Every input has a label. label for="x" matches input id="x".
+         The form does not send data anywhere yet. Sending needs a
+         server, which is covered in a later course.
+         ------------------------------------------------------ -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+      <form>
+        <p>
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+        </p>
+
+        <p>
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </p>
+
+        <p>
+          <label for="subject">Subject</label><br>
+          <input type="text" id="subject" name="subject">
+        </p>
+
+        <p>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="4" cols="40"></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Send Message</button>
+          <button type="reset">Clear</button>
+        </p>
+      </form>
+    </section>
+
+    <!-- ------------------------------------------------------
+         ASIDE: related, but not the main content
+         ------------------------------------------------------ -->
+    <aside>
+      <h2>Favourite Quote</h2>
+      <p><em>"First, solve the problem. Then, write the code."</em></p>
+    </aside>
+
+  </main>
+
+  <hr>
+
+  <!-- ============================================================
+       FOOTER: closing information for the whole page
+       ============================================================ -->
+  <footer>
+    <p>&copy; 2026 Md Sadman Hafiz. Built for CSE-2340, IIUC.</p>
+    <p>
+      Email: <a href="mailto:student@example.com">student@example.com</a>
+    </p>
+  </footer>
+
+</body>
+
+</html>
